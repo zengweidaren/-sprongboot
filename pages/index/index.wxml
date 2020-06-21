@@ -1,0 +1,36 @@
+<!--pages/index/index.wxml-->
+<view>
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/>
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view>
+  </view>
+
+  <view class="title">
+    <view>单据编号</view>
+    <view>供应商</view>
+    <view>金额</view>
+    <view class="oper">操作</view>
+  </view>
+  <block wx:for="{{productList}}" wx:item="product" wx:key="this">
+  <view class="item">
+    <view>{{item.pname}}</view>
+    <view>{{item.pprice}}</view>
+    <view>{{item.pcount}}</view>
+    <view class="oper">
+    <view ><button size="mini" bindtap="oper" data-oper="del" data-id="{{item.id}}">删除</button></view>
+    <view><button size="mini" data-id="{{item.id}}" data-oper="update" bindtap="oper" >修改</button></view>
+      
+    </view>
+   
+  
+  
+  
+  </view>
+  </block>
+  <button type="primary" bindtap="addProduct">添加</button>
+</view>

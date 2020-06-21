@@ -1,0 +1,17 @@
+.title{
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  height: 40px;
+  align-content: center;
+}
+.form-item{
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  margin-top: 15px;
+}
+input{
+  border-bottom: 1px solid #eeeeee
+}

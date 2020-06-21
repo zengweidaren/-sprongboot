@@ -1,0 +1,25 @@
+<!--pages/add/add.wxml-->
+<view>
+<form bindsubmit="addProduct">
+  <view class="title">
+    <view>付款单</view>
+  </view>
+  <view class="form-item">
+    <view>单据id</view>
+    <view><text>{{product.id}}</text></view>
+    </view>
+  <view class="form-item">
+    <view>单据编号</view>
+    <view><input name='pname' value="{{product.pname}}"/></view>
+  </view>
+  <view class="form-item">
+    <view>供应商</view>
+    <view><input name='pprice' value="{{product.pprice}}"/></view>
+  </view>
+  <view class="form-item">
+    <view>金额</view>
+    <view><input name='pcount' value="{{product.pcount}}"/></view>
+  </view>
+  <button form-type="submit" type="primary">提交</button>
+</form>
+</view>
